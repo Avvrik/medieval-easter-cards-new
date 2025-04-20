@@ -2,47 +2,62 @@ export const cardBackgrounds = [
   {
     id: 1,
     name: 'Medieval Scene 1',
-    imageUrl: '/medieval-easter-cards-new/images/1664125456_shutok.ru.17210242.jpg'
+    imageUrl: '/medieval-easter-cards-new/images/03-1707-68237718.jpg'
   },
   {
     id: 2,
     name: 'Medieval Scene 2',
-    imageUrl: '/medieval-easter-cards-new/images/1664125487_shutok.ru.17210232.jpg'
+    imageUrl: '/medieval-easter-cards-new/images/1646462333_1-kartinkin-net-p-srednevekovie-kartinki-1.jpg'
   },
   {
     id: 3,
     name: 'Medieval Scene 3',
-    imageUrl: '/medieval-easter-cards-new/images/1664125518_shutok.ru.17210211.jpg'
+    imageUrl: '/medieval-easter-cards-new/images/b00f83810ed92154f8e84437543892ef_cropped_438x384.jpg'
   },
   {
     id: 4,
     name: 'Medieval Scene 4',
-    imageUrl: '/medieval-easter-cards-new/images/1664125463_shutok.ru.17210204.jpg'
+    imageUrl: '/medieval-easter-cards-new/images/7bc3abeaddaa21994bb2eb92965e8b14.jpg'
   },
   {
     id: 5,
     name: 'Medieval Scene 5',
-    imageUrl: '/medieval-easter-cards-new/images/1664125540_shutok.ru.17210187.jpg'
+    imageUrl: '/medieval-easter-cards-new/images/324234.jpg'
   },
   {
     id: 6,
     name: 'Medieval Scene 6',
-    imageUrl: '/medieval-easter-cards-new/images/1664125541_shutok.ru.17210181.jpg'
+    imageUrl: '/medieval-easter-cards-new/images/1648544881_10.jpg'
   },
   {
     id: 7,
     name: 'Medieval Scene 7',
-    imageUrl: '/medieval-easter-cards-new/images/1664125538_shutok.ru.17210173.jpg'
+    imageUrl: '/medieval-easter-cards-new/images/GEfLjhYgsYQ.jpg'
   },
   {
     id: 8,
     name: 'Medieval Scene 8',
-    imageUrl: '/medieval-easter-cards-new/images/1664125480_shutok.ru.17210168.jpg'
+    imageUrl: '/medieval-easter-cards-new/images/873861.jpg'
   },
   {
     id: 9,
     name: 'Medieval Scene 9',
-    imageUrl: '/medieval-easter-cards-new/images/1664125534_shutok.ru.17210163.jpg'
+    imageUrl: '/medieval-easter-cards-new/images/873862.jpg'
+  },
+  {
+    id: 10,
+    name: 'Medieval Scene 10',
+    imageUrl: '/medieval-easter-cards-new/images/1522323481.jpg.webp'
+  },
+  {
+    id: 11,
+    name: 'Medieval Scene 11',
+    imageUrl: '/medieval-easter-cards-new/images/150996237617436628.jpg'
+  },
+  {
+    id: 12,
+    name: 'Medieval Scene 12',
+    imageUrl: '/medieval-easter-cards-new/images/1509962350161975580.jpg'
   }
 ];
 
