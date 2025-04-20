@@ -59,18 +59,9 @@ function App() {
               {currentCard.phrase}
             </div>
           </div>
-          <div className="card-actions">
+          <div className="button-container">
             <button className="medieval-button" onClick={generateNewCard}>
               Generate New Card
-            </button>
-            <button 
-              className="medieval-button"
-              onClick={() => {
-                // TODO: Implement save functionality
-                alert('Card saved! (Feature coming soon)');
-              }}
-            >
-              Save This Card
             </button>
           </div>
         </div>
