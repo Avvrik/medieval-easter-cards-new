@@ -1,0 +1,408 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Parchment_texture.jpg/800px-Parchment_texture.jpg');
+  background-blend-mode: overlay;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  padding: 20px;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: #f8d7a3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cards-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #f8d7a3;
+  border: 4px solid #8b4513;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  color: #8b4513;
+  font-family: 'MedievalSharp', cursive;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+/* New styles for CreateCard component */
+.create-card, .browse-templates {
+  padding: 2rem;
+  color: #f8d7a3;
+}
+
+.card-editor {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f8d7a3;
+  border: 4px solid #8b4513;
+  border-radius: 10px;
+  padding: 2rem;
+  color: #2c3e50;
+}
+
+.editor-section {
+  margin-bottom: 2rem;
+}
+
+.editor-section h3 {
+  color: #8b4513;
+  font-family: 'MedievalSharp', cursive;
+  margin-bottom: 1rem;
+}
+
+.background-options {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navigation-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.option {
+  padding: 1rem;
+  border: 2px solid #8b4513;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 150px;
+}
+
+.option-image {
+  width: 100%;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+}
+
+.option.selected {
+  background-color: #8b4513;
+  color: #f8d7a3;
+  transform: scale(1.05);
+}
+
+.option:hover {
+  transform: scale(1.05);
+}
+
+.card-preview {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  border: 4px solid #8b4513;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.card-message {
+  background-color: rgba(248, 215, 163, 0.95);
+  padding: 2.5rem;
+  border-radius: 10px;
+  max-width: 80%;
+  font-family: 'MedievalSharp', cursive;
+  color: #8b4513;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 3px solid #8b4513;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(3px);
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.random-phrase-button {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #8b4513;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical;
+  background-color: #fff;
+  color: #2c3e50;
+  font-family: 'MedievalSharp', cursive;
+}
+
+.card-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.medieval-button {
+  background-color: #8b4513;
+  color: #f8d7a3;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  border: 2px solid transparent;
+  text-transform: capitalize;
+}
+
+.medieval-button:hover {
+  background-color: #6b3410;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.medieval-button:active {
+  transform: translateY(0);
+}
+
+.save-button {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.templates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.template-card {
+  background-color: #f8d7a3;
+  border: 4px solid #8b4513;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.template-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  border: 2px solid #8b4513;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .medieval-card {
+    height: 400px;
+    margin: 1rem;
+  }
+
+  .card-message {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+  }
+}
+
+.medieval-card {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  margin: 2rem auto;
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #2c1810;
+  border: 8px solid #8b4513;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.medieval-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(44, 24, 16, 0.2),
+    rgba(44, 24, 16, 0.6)
+  );
+  pointer-events: none;
+}
+
+.medieval-card:hover {
+  transform: scale(1.02);
+}
+
+.card-message {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(44, 24, 16, 0.9);
+  color: #d4af37;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  max-width: 80%;
+  border: 2px solid #d4af37;
+}
+
+.medieval-button {
+  background-color: #8b4513;
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  padding: 1rem 2rem;
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 1rem;
+}
+
+.medieval-button:hover {
+  background-color: #d4af37;
+  color: #8b4513;
+}
+
+.loading-message,
+.error-message {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(44, 24, 16, 0.9);
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  margin: 2rem auto;
+  max-width: 80%;
+  font-family: 'Cinzel', serif;
+}
+
+@media (max-width: 768px) {
+  .medieval-card {
+    height: 400px;
+    margin: 1rem;
+  }
+
+  .card-message {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .medieval-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
