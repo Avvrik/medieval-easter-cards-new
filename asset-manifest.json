@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/medieval-easter-cards-new/static/css/main.d372bf96.css",
+    "main.js": "/medieval-easter-cards-new/static/js/main.87871fc8.js",
+    "static/js/453.b881b0a9.chunk.js": "/medieval-easter-cards-new/static/js/453.b881b0a9.chunk.js",
+    "index.html": "/medieval-easter-cards-new/index.html",
+    "main.d372bf96.css.map": "/medieval-easter-cards-new/static/css/main.d372bf96.css.map",
+    "main.87871fc8.js.map": "/medieval-easter-cards-new/static/js/main.87871fc8.js.map",
+    "453.b881b0a9.chunk.js.map": "/medieval-easter-cards-new/static/js/453.b881b0a9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d372bf96.css",
+    "static/js/main.87871fc8.js"
+  ]
+}
